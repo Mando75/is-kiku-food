@@ -1,14 +1,20 @@
-import "./home.scss";
 import { Link } from "react-router-dom";
+import styles from "./home.module.scss";
+import { Breadcrumb } from "../components/Breadcrumbs";
 
+export const HomeCrumb: Breadcrumb = {
+  to: "/",
+  label: "Home",
+};
 function home() {
   return (
-    <main className="home">
-      <span className="question">Is Kiku Food?</span>
-      <h1>Yes.</h1>
-      <Link to="/proof" className="proof-link">
-        Need Proof?
-      </Link>
+    <main className="container">
+      <div className={styles.answer}>
+        <h1>Yes.</h1>
+        <Link to="/proof" className="proof-link">
+          <small>Need Proof?</small>
+        </Link>
+      </div>
     </main>
   );
 }

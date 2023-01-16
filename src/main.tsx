@@ -3,8 +3,11 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./routes/home";
 import Proof from "./routes/proof";
-import ProofSlug from "./routes/proof/$slug";
+import "@picocss/pico/css/pico.min.css";
 import "./index.scss";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer/Footer";
+import Exhibits from "./routes/proof/exhibits";
 
 const router = createBrowserRouter([
   {
@@ -16,13 +19,19 @@ const router = createBrowserRouter([
     element: <Proof />,
   },
   {
-    path: "/proof/:slug",
-    element: <ProofSlug />,
+    path: "/proof/exhibits",
+    element: <Exhibits />,
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <article className="article-root">
+      <header>
+        <Nav />
+      </header>
+      <RouterProvider router={router} />
+      <Footer />
+    </article>
   </React.StrictMode>
 );

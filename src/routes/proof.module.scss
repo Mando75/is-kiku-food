@@ -1,0 +1,20 @@
+.proof {
+    hgroup {
+      text-align: center;
+    }
+
+  figure {
+    max-width: 300px;
+    margin: auto;
+    position: relative;
+
+    img {
+      border-radius: .5rem;
+    }
+
+    figcaption {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+}
