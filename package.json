@@ -1,12 +1,14 @@
 {
   "name": "is-kiku-food",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "license": "CC-BY-NC-SA-4.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "./deploy.sh"
   },
   "dependencies": {
     "@picocss/pico": "^1.5.6",
