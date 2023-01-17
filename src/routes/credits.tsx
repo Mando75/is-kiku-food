@@ -1,7 +1,6 @@
 import Breadcrumbs, { Breadcrumb } from "../components/Breadcrumbs";
 import { HomeCrumb } from "./home";
 import ExternalLink from "../components/ExternalLink";
-import "../index.scss";
 
 const breadcrumbs: Array<Breadcrumb> = [HomeCrumb];
 function credits() {
