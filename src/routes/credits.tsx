@@ -28,11 +28,17 @@ function credits() {
               P.È.N.G.U
             </ExternalLink>
           </li>
+          <li>
+            <ExternalLink href="https://twitter.com/mando0975">
+              Mando0975
+            </ExternalLink>
+          </li>
           <li>All the clippers who helped create an archive of Kiku footage</li>
+          <li>Kiku's mods</li>
         </ul>
         <footer>
-          We would also like to thank Kiku for being a great sport despite
-          chat's many, many, <strong>many</strong> attempts to snack on her.
+          We would also like to extend a huge thank Kiku for being a great sport
+          despite chat's many, <strong>many</strong> attempts to snack on her.
         </footer>
       </article>
     </main>
