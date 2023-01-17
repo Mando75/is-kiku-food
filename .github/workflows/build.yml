@@ -1,10 +1,6 @@
-name: Deploy
+name: Build
 
-on:
-  pull_request:
-    branches-ignore:
-      - 'master'
-      - 'digital-ocean-prod'
+on: [pull_request]
 
 jobs:
   build:
