@@ -40,4 +40,4 @@ If you have something you would like to contribute, please either open an issue 
 
 ## Code of Conduct
 
-Trolling/harassment/discrimination/etc will not be tolerated. 
+Follow the Golden Rule
