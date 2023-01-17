@@ -8,6 +8,7 @@ import "./index.scss";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer/Footer";
 import Exhibits from "./routes/proof/exhibits";
+import Credits from "./routes/credits";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
     path: "/proof/exhibits",
     element: <Exhibits />,
   },
+  {
+    path: "/credits",
+    element: <Credits />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
@@ -30,7 +35,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <header>
         <Nav />
       </header>
-      <RouterProvider router={router} />
+      <RouterProvider router={router} fallbackElement={<Home />} />
       <Footer />
     </article>
   </React.StrictMode>

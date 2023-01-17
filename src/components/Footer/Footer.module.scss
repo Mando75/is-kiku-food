@@ -1,7 +1,4 @@
 .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 
   ul  li {
     list-style: none;
@@ -14,4 +11,28 @@
   .attribution {
     flex-shrink: 1;
   }
+
+  .kikuSocials {
+    margin-left: 17px;
+
+    &, h6, li, ul {
+      margin-bottom: 0;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding-left: 0;
+    }
+  }
+
+  .disclaimer {
+     p {
+       --font-size: .7rem;
+       margin: 0
+     }
+  }
 }
+
