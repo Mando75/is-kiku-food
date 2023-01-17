@@ -1,0 +1,27 @@
+:root {
+  --baby-pink: #ECC2BDff;
+  --metallic-seaweed: #40818f;
+  --metallic-seaweed-hover: rgba(64, 129, 143, 0.81);
+  --middle-blue: #73B9C1ff;
+
+  --light: #fcfbf9;
+  --dark: #1f181c;
+
+  [data-theme="dark"] {
+    --primary: var(--metallic-seaweed);
+    --primary-hover: var(--metallic-seaweed-hover);
+  }
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+.article-root {
+  min-height: calc(100vh - (2 * var(--block-spacing-vertical)));
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}

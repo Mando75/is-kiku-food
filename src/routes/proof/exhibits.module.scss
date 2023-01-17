@@ -1,0 +1,24 @@
+.exhibits {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .media {
+    display: flex;
+    justify-content: center;
+
+    video, img {
+      max-width: 560px;
+    }
+
+    iframe, video, img {
+      border-radius: .5rem;
+    }
+
+    figcaption {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+}
